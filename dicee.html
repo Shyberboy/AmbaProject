@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Dice Simulator</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Indie+Flower|Lobster"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Dice Simulator</h1>
+
+      <div class="update">
+        <p id="announce" class="update-txt">Click "Roll!" button to start</p>
+      </div>
+
+      <div class="dice">
+        <p>Player 1</p>
+        <img id="img1" class="img1" src="images/dice1.png" />
+      </div>
+
+      <div class="dice">
+        <p>Player 2</p>
+        <img id="img2" class="img2" src="images/dice1.png" />
+      </div>
+
+      <div class="btn-container">
+        <button onclick="rollDice()" id="roll-btn" class="roll-btn">Roll!</button>
+        <button onclick="resetDice()" id="reset-btn" class="reset-btn">Reset</button>
+      </div>
+
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
